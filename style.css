@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+
+nav {
+    background-color: #343A40;
+    padding-left: 5%;
+    /* overflow: hidden    pierwszy sposob na ustawienie w linii */
+    /* height: 50px drugi sposob, zle na sztywno okreslac */
+}
+
+nav ul {
+max-width: 1280px;
+margin: 0 auto;
+list-style: none;
+}
+
+nav ul li {
+float: left;
+
+border-right: 2px solid black;
+}
+
+/* nav ul li:nth-last-child(1) {
+     height:0;        trzeci sposob na liniowe ustawienie
+     clear: both;
+     float: none; 
+} */
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    display:block;
+    /* pamietac zeby display:block bylo dla tekstu bo od razu robi z niego przycisk */
+    padding: 0 40px;
+    color: #bbb;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    color: white;
+}
+
+i {
+    margin-right: 10px;
+    font-size: 24px;
+    vertical-align: -2px;
+}
+
+
+p {
+    margin-top: 40px;
+}
